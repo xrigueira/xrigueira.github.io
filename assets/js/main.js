@@ -143,11 +143,11 @@
                 * sectionId variable we are getting while looping through sections as 
                 * an selector
                 */
-                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                    document.querySelector('.s-header__nav a[href*=' + sectionId + ']').parentNode.classList.add('current');
-                } else {
-                    document.querySelector('.s-header__nav a[href*=' + sectionId + ']').parentNode.classList.remove('current');
-                }
+                // if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                //     document.querySelector('.s-header__nav a[href*=' + sectionId + ']').parentNode.classList.add('current');
+                // } else {
+                //     document.querySelector('.s-header__nav a[href*=' + sectionId + ']').parentNode.classList.remove('current');
+                // }
             });
         }
 
@@ -299,9 +299,8 @@
    /* Initialize
     * ------------------------------------------------------ */
     (function ssInit() {
-
         ssPreloader();
-        ssMoveHeader();
+        // ssMoveHeader();
         ssMobileMenu();
         ssScrollSpy();
         ssGLightbox();
@@ -312,3 +311,14 @@
     })();
 
 })(document.documentElement);
+
+// show temporary alert for under construction
+function showAlert() {
+  alert('Sorry! It\'s not here yet, because the website is currently under construction. Please check https://minalee.info/ or email mnlee@cs.uchicago.edu for this information.');
+  return false;
+}
+
+var elements = document.getElementsByClassName('todo');
+for (var i = 0; i < elements.length; i++) {
+  elements[i].onclick = showAlert;
+}
