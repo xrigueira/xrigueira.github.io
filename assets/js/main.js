@@ -314,7 +314,7 @@
 
 // show temporary alert for under construction
 function showAlert() {
-  alert('Sorry! It\'s not here yet, because the website is currently under construction. Please check https://minalee.info/ or email mnlee@cs.uchicago.edu for this information.');
+  alert('Sorry! It\'s not here yet, because the website is currently under construction. Please check https://xrigueira.github.io or email xurxo.rigueira@uvigo.gal for this information.');
   return false;
 }
 
